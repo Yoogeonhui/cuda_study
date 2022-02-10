@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  cuda_study:
+    build: .
+    container_name: cuda_container
+    command: /usr/sbin/sshd -D
+    ports:
+      - "2222:22"
+    volumes:
+      - .:/root/src
+  
