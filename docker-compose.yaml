@@ -8,5 +8,9 @@ services:
     ports:
       - "2222:22"
     volumes:
-      - .:/root/src
-  
+      - .:/root/mounted
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

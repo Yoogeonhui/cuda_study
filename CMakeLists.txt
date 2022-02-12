@@ -2,9 +2,11 @@ cmake_minimum_required(VERSION 3.10)
 
 project(cuda_really_study LANGUAGES CXX CUDA)
 
-set (CMAKE_CXX_STANDARD 17)
+set (CMAKE_CXX_STANDARD 11)
+
 
 include(conan_build/conanbuildinfo.cmake)
+
 conan_basic_setup()
 
 include_directories(include)

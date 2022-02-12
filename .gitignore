@@ -11,7 +11,10 @@ CTestTestfile.cmake
 cmake-file-debug/
 
 
+build
 bin
 lib
+conan_build/*
 
 .vsls.json
+.vscode/*
